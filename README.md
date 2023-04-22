@@ -1,25 +1,24 @@
-(MY GOAL)
-Password Generator using Tkinter
-Simple Calculator using Tkinter
-Rock, Paper, Scissors Game
-Hangman Game
-Tic Tac Toe Game
-To-Do List using SQLite database
-Weather App using OpenWeatherMap API
-Currency Converter using Fixer API
-Image Downloader using Requests and Tkinter
-Sudoku Game
-Snake Game using Pygame
-BMI Calculator using Tkinter
-Digital Clock using Tkinter
-Countdown Timer using Tkinter
-QR Code Generator using qrcode library
-URL Shortener using Bitly API
-Web Scraper using BeautifulSoup and Requests
-Simple Chatbot using NLTK library
-File Encryption/Decryption using cryptography library
-Audio/Video Player using VLC and Tkinter
-Music Player using Pygame and Tkinter
+1.Password Generator using Tkinter
+2.Simple Calculator using Tkinter
+3.Rock, Paper, Scissors Game
+4.Hangman Game
+5.Tic Tac Toe Game
+6.To-Do List using SQLite database
+7.Weather App using OpenWeatherMap API
+8.Currency Converter using Fixer API
+9.Image Downloader using Requests and Tkinter
+10.Sudoku Game
+11.Snake Game using Pygame
+12.BMI Calculator using Tkinter
+13.Digital Clock using Tkinter
+14.Countdown Timer using Tkinter
+15.QR Code Generator using qrcode library
+16.URL Shortener using Bitly API
+17.Web Scraper using BeautifulSoup and Requests
+18.Simple Chatbot using NLTK library
+19.File Encryption/Decryption using cryptography library
+20.Audio/Video Player using VLC and Tkinter
+21.Music Player using Pygame and Tkinter
 Movie Recommendation System using IMDb API
 Book Recommendation System using Goodreads API
 Audio Book Player using pyttsx3 and Tkinter
