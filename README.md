@@ -1,9 +1,15 @@
 1.Password Generator using Tkinter
+
 2.Simple Calculator using Tkinter
+
 3.Rock, Paper, Scissors Game
+
 4.Hangman Game
+
 5.Tic Tac Toe Game
+
 6.To-Do List using SQLite database
+
 7.Weather App using OpenWeatherMap API
 8.Currency Converter using Fixer API
 9.Image Downloader using Requests and Tkinter
