@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import ttkbootstrap as ttk 
 
 def convert():
 
@@ -9,7 +10,7 @@ def convert():
     
 
 #window
-window = tk.Tk()
+window = ttk.Window(themename = 'darkly')
 window.title("Window")
 window.geometry('200x150')
 
