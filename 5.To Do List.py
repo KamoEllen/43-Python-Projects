@@ -1,7 +1,7 @@
 import tkinter
 from tkinter import *
 
-root.Tk()
+root = Tk() //root.Tk() to this
 root.title("To-Do-List")
 root.geometry("300x700x200")
 root.resizable(False,False)
