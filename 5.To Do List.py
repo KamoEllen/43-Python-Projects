@@ -37,7 +37,7 @@ def openTaskFile():
          tasks = taskfile.readline()
          
     for task in tasks:
-        if task != '\n\:
+        if task != '\n':
             task_list.append(task)
             listbox.insert(END, task)
             
