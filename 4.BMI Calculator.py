@@ -1,111 +1,99 @@
-#pip install pillow
-#BodyMassIndex , given by mass(kg) & height(m) [kg % m^2]
-#get images or use links
-
-
 from tkinter import *
 import tkinter as tk
 from tkinter import ttk
-from PIL import Image,ImageTk
+from PIL import Image, ImageTk
+
+# pip install pillow -> comment out because it's not necessary here
 
 root = Tk()
 root.title("BMI Calculator")
-root.geometry("500x700x900")
-root.configure(bg=orange)
+root.geometry("500x700")  # removed the invalid 'x900'
+root.configure(bg="orange")
 
 def BMI():
-    h=float(Height.get())
-    w=float(Weight.get())
-   
-   #convert height into meter
-   m=h/100
-   bmi=round(float(w/m**2))
-   #print(bmi)
-   label1.config(text=bmi)
-   
-   #bmi of sa
-   if bmi < = 18.5
-   label2.config(text="Underweight")
-   label3.config(tet="You have lower weight then nomal body!")
-   
-   elif bmi > 18.5 and bmi <= 25;
-   label2.config(text="Normal")
-   label3.config(tet="!")
-   
-   elif bmi > 25 and bmi <= 30;
-   label2.config(text="Overweight")
-   label3.config(tet="It indicates that a person is \n slightly overweight \n!")
-   
-   else:
-   label2.config(text="Obese!")
-   label3.config(tet="You have higher weighht than average body! \n A doctor may advise to lose some \n weight for health")
-   
-   
-   
-   
-#icon , get link
-icon_pic = photo_picture() #link to icon img
-root.picture(False,icon_pic)
+    h = float(Height.get())
+    w = float(Weight.get())
 
-#top
-top=icon_picture() #link
-top_picture=Label(root,image=top,background=blue)
-top_picture.pack(x =-1, y =-1)
+    # convert height into meter
+    m = h / 100
+    bmi = round(float(w / m ** 2))
+    label1.config(text=bmi)
 
-#bottom box
-Label(root,width = 72, height = 18, bg ="light blue").pack(side = BOTTOM)
+    # fix the syntax errors in these if-elif statements
+    if bmi <= 18.5:
+        label2.config(text="Underweight")
+        label3.config(text="You have lower weight than normal body!")
+    elif bmi > 18.5 and bmi <= 25:
+        label2.config(text="Normal")
+        label3.config(text="")
+    elif bmi > 25 and bmi <= 30:
+        label2.config(text="Overweight")
+        label3.config(text="It indicates that a person is slightly overweight!")
+    else:
+        label2.config(text="Obese!")
+        label3.config(text="You have higher weight than average body! A doctor may advise to lose some weight for health")
 
-#two boxes
-box = photo_picture()#boximg
-Label(root,image=box).place(x=20, y = 100)
-Label(root,image=box).place(x=240, y= 100)
+# comment out the undefined functions, photo_picture and icon_picture, and the missing link
+# also fix the typo "tet" -> "text" in label3 of the BMI function
 
-#scale
-scale=photo_picture() #scale img ink
-Label(root,image=scale,bg="lightpink").place(x=20,y=310)
+# icon
+icon_pic = None  # replace None with the actual link to the icon img
+root.iconphoto(False, ImageTk.PhotoImage(Image.open(icon_pic)))
 
+# top
+top_pic = None  # replace None with the actual link to the top img
+top_picture = Label(root, image=ImageTk.PhotoImage(Image.open(top_pic)), bg="blue")
+top_picture.pack(side=TOP)
+
+# bottom box
+Label(root, width=72, height=18, bg="light blue").pack(side=BOTTOM)
+
+# two boxes
+box_pic = None  # replace None with the actual link to the box img
+Label(root, image=ImageTk.PhotoImage(Image.open(box_pic))).place(x=20, y=100)
+Label(root, image=ImageTk.PhotoImage(Image.open(box_pic))).place(x=240, y=100)
 #############Slider 1#####################
-curent_value = tk.DoubleVar()
+# scale 1
 def get_current_value():
-    return '{: .2f}'.format(current_value.get())
+    return '{:.2f}'.format(current_value.get())
 
 def slider_changed(event):
     Height.set(get_current_value())
 
-    size=int(float(get_current_value()))
-    img = (Image.open(" "))
-    resized_image=img.esize((50,10+size))
-    photo2=ImageTk.photo_picture(resized_image)
+    size = int(float(get_current_value()))
+    img = Image.open("")  # replace "" with the actual link to the scale img
+    resized_image = img.resize((50, 10 + size))
+    photo2 = ImageTk.PhotoImage(resized_image)
     secondimage.config(image=photo2)
-    secondimage.place(x=70,y=550-size)
-    secondimage.image=photo2
-   
-#COMMAND to change BG Color of scale
+    secondimage.place(x=70, y=550-size)
+    secondimage.image = photo2
 
-style = ttk.Style()
-style.configure("TScale",background="gray")
-slider.ttk.Scale(root,from_=0,to = 220, orient = 'horizontal', style ="TScale", command=slider_changed,variable=current_value)
-slider.place(x=80,y=250)
+current_value = tk.DoubleVar()
+scale = ttk.Scale(root, from_=0, to=220, orient='horizontal', style="TScale", command=slider_changed, variable=current_value)
+scale.place(x=80, y=310)  # adjust the y coordinate to avoid overlapping with the bottom box
+
+
+
 
 ##########################################
 
 
 #@@@@@@@@@@@@Slider 2@@@@@@@@@@@@@@@@@@@@@
+# Scale 2
+current_value2 = tk.DoubleVar()
 
-curent_value2 = tk.DoubleVar()
 def get_current_value2():
-    return '{: .2f}'.format(current_value2.get())
+    return '{:.2f}'.format(current_value2.get())
 
 def slider_changed2(event):
     Height.set(get_current_value2())
 
-   
-#COMMAND to change BG Color of scale
-
+# Command to change BG Color of scale
 style2 = ttk.Style()
-style2.configure("TScale",background="gray")
-slider2=ttk.Scale(root,from_=0,to = 200, orient = 'horizontal', style ="TScale", command=slider_changed2 ,variable=current_value2)
-slider2.place(x=300,y=250)
+style2.configure("TScale", background="gray")
+
+slider2 = ttk.Scale(root, from_=0, to=200, orient='horizontal', style="TScale", command=slider_changed2, variable=current_value2)
+slider2.place(x=300, y=250)
 
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
