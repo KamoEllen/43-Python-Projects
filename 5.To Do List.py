@@ -1,9 +1,9 @@
 import tkinter
 from tkinter import *
 
-root = Tk() //root.Tk() to this
+root = Tk() #root.Tk() to this
 root.title("To-Do-List")
-root.geometry("300x700+200+200")//root.geometry("300x700x200") to this
+root.geometry("300x700+200+200") #root.geometry("300x700x200") to this
 root.resizable(False,False)
 
 task_list= []
@@ -42,7 +42,7 @@ def openTaskFile():
             listbox.insert(END, task)
             
     except:
-    file = open("tasklist.txt', 'w')
+    file = open("tasklist.txt", 'w') #file = open("tasklist.txt', 'w') to this
     file.close()
     
 
@@ -62,7 +62,7 @@ noteImage=PhotoImage()#img link
 Label(root,image=noteImage,bg="blue").place(x=30,y=25)
 
 heading=Label(root,text="ALL TASk", font="arial 20 bold",fg="white",bg="gray")
-heading.pace(x=130,y=20)
+heading.place(x=130,y=20)
 
 #main
 frame= Frame(root, width= 400,height=50,bg="white")
@@ -74,7 +74,7 @@ task_entry.place(=10,y=7)
 task_entry.focus()
 
 button=Button(frame,text="ADD",font="arial 20 bold",width=6,bg="green,fg="#fff",bd=0,command=addTask)
-button.place=300,y=0)
+button.place(x=300,y=0)
 
 #listbox
 frame1 = Frame(root,bd=3,width=700,height=280,bg="red")
