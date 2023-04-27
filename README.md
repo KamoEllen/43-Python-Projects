@@ -1,3 +1,10 @@
+#(what i''ve learnt)
+The pack() method is used to arrange widgets in a block format either vertically or horizontally. This means that the widgets are packed together tightly in a single row or column, and the size of each widget is determined by its content. You can also specify the side and fill parameters to determine which side of the parent widget the widgets are aligned to and whether they should expand to fill available space.
+
+The place() method is used to position widgets at specific x and y coordinates within the parent widget, as well as specify their width and height. This allows you to position widgets anywhere you want in the parent widget, which can be useful for more complex layouts. However, it can also be more time-consuming and difficult to use than pack()
+
+
+
 1.Password Generator using Tkinter
 
 2.Simple Calculator using Tkinter
