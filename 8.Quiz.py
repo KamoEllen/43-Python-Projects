@@ -1,4 +1,3 @@
-from tkinter import *
 from tkinter import tk
 y= 0 #y starts @ 0
 a = ttk.Notebook() #.notebook , dira more research
