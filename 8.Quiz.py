@@ -38,12 +38,12 @@ def quiz(a):
     Button(frame3, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
     
     #4
-    Label(frame1, text="Life expectancy?", font=("Arial", 50, "bold")).grid()
+    Label(frame4, text="Life expectancy?", font=("Arial", 50, "bold")).grid()
     Button(frame4, text="33", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong2).grid(row=3, column=1)
     Button(frame4, text="31", font=("Arial", 30, "bold"), bg="light green", command=a_wrong2).grid(row=3, column=2)
     Button(frame4, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
     #5
-    Label(frame1, text="Age in 2023?", font=("Arial", 50, "bold")).grid()
+    Label(frame5, text="Age in 2023?", font=("Arial", 50, "bold")).grid()
     Button(frame5, text="33", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong2).grid(row=3, column=1)
     Button(frame5, text="31", font=("Arial", 30, "bold"), bg="light green", command=a_wrong2).grid(row=3, column=2)
     Button(frame5, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
