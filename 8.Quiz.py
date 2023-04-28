@@ -21,8 +21,8 @@ def quiz(a):
     
     #1
     Label(frame1, text="Age when first put in Jail?", font=("Arial", 50, "bold")).grid()
-    Button(frame1, text="20", font=("Arial", 30, "bold"), bg="light blue", command=a_right).grid(row=3, coLumn=1)
-    Button(frame1, text="26", font=("Arial", 30, "bold"),bg="light green", command=a_wrong).grid(row=3,coLumn=2)
+    Button(frame1, text="20", font=("Arial", 30, "bold"), bg="light blue", command=a_right).grid(row=3, column=1)
+    Button(frame1, text="26", font=("Arial", 30, "bold"),bg="light green", command=a_wrong).grid(row=3,column=2)
     Buttom(frame1, text="30", font=("arial", 30, "bold"), bg="light prink", command=a_wrong).grid(row=3,column=3)
     
    #2
