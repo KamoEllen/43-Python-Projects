@@ -21,7 +21,7 @@ sequence_input = ">GAACACGTGGAGGCAGGTAAGAAGAACTTATTCCTACGGAGA\nACACGTGGAGGCAGGTA
 
 sequence = st.text_area("Sequence input", sequence_input, height=250)
 sequence = sequence.splitlines()
-sequence = sequnce[1:] #skip first line , start at 1 
+sequence = sequence[1:] #skip first line , start at 1 
 sequence = ''.join(sequence) #concatenates list to string
 
 st.write("""
