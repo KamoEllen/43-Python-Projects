@@ -39,10 +39,9 @@ def quiz(a):
     
     #4
     Label(frame1, text="Life expectancy?", font=("Arial", 50, "bold")).grid()
-    Button(frame1, text="90", font=("Arial", 30, "bold"), bg="light blue", command=a_right4).grid(row=3, coLumn=1)
-    Button(frame1, text="120", font=("Arial", 30, "bold"),bg="light green", command=a_wrong4).grid(row=3,coLumn=2)
-    Buttom(frame1, text="130", font=("arial", 30, "bold"), bg="light prink", command=a_wrong4).grid(row=3,column=3)
-    
+    Button(frame4, text="33", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong2).grid(row=3, column=1)
+    Button(frame4, text="31", font=("Arial", 30, "bold"), bg="light green", command=a_wrong2).grid(row=3, column=2)
+    Button(frame4, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
     #5
     Label(frame1, text="Age in 2023?", font=("Arial", 50, "bold")).grid()
     Button(frame1, text="43", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong5).grid(row=3, coLumn=1)
