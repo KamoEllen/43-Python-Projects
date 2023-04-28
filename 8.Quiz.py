@@ -32,11 +32,10 @@ def quiz(a):
     Button(frame2, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
 
     #3
-    Label(frame1, text="Age they will be allowed to leave Prison?", font=("Arial", 50, "bold")).grid()
-    Button(frame1, text="63", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong3).grid(row=3, coLumn=1)
-    Button(frame1, text="71", font=("Arial", 30, "bold"),bg="light green", command=a_wrong3).grid(row=3,coLumn=2)
-    Buttom(frame1, text="90", font=("arial", 30, "bold"), bg="light prink", command=a_right3).grid(row=3,column=3)
-    
+    Label(frame3, text="Age they will be allowed to leave Prison?", font=("Arial", 50, "bold")).grid()
+    Button(frame3, text="33", font=("Arial", 30, "bold"), bg="light blue", command=a_wrong2).grid(row=3, column=1)
+    Button(frame3, text="31", font=("Arial", 30, "bold"), bg="light green", command=a_wrong2).grid(row=3, column=2)
+    Button(frame3, text="30", font=("arial", 30, "bold"), bg="light pink", command=a_right2).grid(row=3, column=3)
     
     #4
     Label(frame1, text="Life expectancy?", font=("Arial", 50, "bold")).grid()
