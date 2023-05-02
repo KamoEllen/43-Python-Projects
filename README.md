@@ -52,7 +52,7 @@ Movie Recommendation System using IMDb API
 
 Book Recommendation System using Goodreads API
 
-Audio Book Player using pyttsx3 and Tkinter
+Audio Book Player using pyttsx3 and Tkinter(#tkinter is lovely)
 
 Morse Code Translator using Tkinter
 
@@ -64,7 +64,7 @@ Number Guessing Game
 
 Typing Speed Test using Tkinter
 
-Password Manager using SQLite database and Tkinter
+Password Manager using SQLite database and Tkinter (#SQL ON UBUNTU IS THE WORST THING EVER)
 
 Text-to-Speech Converter using gTTS and Tkinter
 
